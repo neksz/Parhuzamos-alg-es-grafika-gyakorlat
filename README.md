@@ -1,2 +1,1 @@
-# Parhuzamos, grafika gyakorlat
- Parhuzamos, grafika gyakorlat
+# Grafika gyakorlat
