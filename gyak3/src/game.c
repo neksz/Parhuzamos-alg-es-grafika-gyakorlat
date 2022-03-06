@@ -96,6 +96,10 @@ void update_game(Game *game)
     game->last_update_time = current_time;
 
     update_pong(&(game->pong), elapsed_time);
+    if (game->pong.restart == 1)
+    {
+        game->is_running = false;
+    }
 }
 
 void render_game(Game *game)

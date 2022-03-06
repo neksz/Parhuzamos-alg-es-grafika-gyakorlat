@@ -1,10 +1,13 @@
 #include "pong.h"
+//#include <stdio.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 void init_pong(Pong *pong, int width, int height)
 {
     pong->width = width;
     pong->height = height;
+    pong->restart = 0;
     init_pad(&(pong->left_pad), 0, height, RED_THEME);
     init_pad(&(pong->right_pad), width - 50, height, GREEN_THEME);
     init_ball(&(pong->ball), width / 2, height / 2);
@@ -58,7 +61,11 @@ void bounce_ball(Pong *pong)
         }
         else
         {
-            printf("Died\n");
+            if (pong->ball.x < 20)
+            {
+                printf("Died, restarting...\n");
+                pong->restart = 1;
+            }
         }
     }
     if (pong->ball.x + pong->ball.radius > pong->width - 50)
@@ -72,7 +79,11 @@ void bounce_ball(Pong *pong)
         }
         else
         {
-            printf("Died\n");
+            if (pong->ball.x > (pong->right_pad.x + 20))
+            {
+                printf("Died, restarting...\n");
+                pong->restart = 1;
+            }
         }
     }
     if (pong->ball.y - pong->ball.radius < 0)
