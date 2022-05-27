@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ahRiGxZG3jBrEP0nFcv6yF05im56FKmPOqRPS3AdswDehYzzkQJvDuULnvQlUW0WBo3rKKEjwOmbW8k4la0FAA==",
+  "success": true,
+  "projectFilePath": "C:\\Programming\\CircleMaker\\CircleMaker\\CircleMaker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Patrik\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0-preview.4.22229.4\\microsoft.win32.systemevents.7.0.0-preview.4.22229.4.nupkg.sha512",
+    "C:\\Users\\Patrik\\.nuget\\packages\\system.drawing.common\\7.0.0-preview.4.22229.4\\system.drawing.common.7.0.0-preview.4.22229.4.nupkg.sha512"
+  ],
+  "logs": []
+}
